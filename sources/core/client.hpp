@@ -1543,6 +1543,14 @@ public:
   std::future<reply>
   xadd(const std::string& key, const std::string& id, const std::multimap<std::string, std::string>& field_members);
 
+  client &
+  xadd(const std::string &key, const std::string &id, const std::multimap<std::string, std::string> &field_members,
+       int max_len, const reply_callback_t &reply_callback);
+
+  std::future<reply>
+  xadd(const std::string &key, const std::string &id, const std::multimap<std::string, std::string> &field_members,
+       int max_len);
+
   /**
  * @brief changes the ownership of a pending message to the specified consumer
  * @param stream
