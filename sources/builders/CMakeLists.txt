@@ -1,0 +1,23 @@
+target_sources(cpp_redis
+	PUBLIC
+		array_builder.cpp;
+		array_builder.hpp;
+		builder_iface.hpp;
+		builders_factory.cpp;
+		builders_factory.hpp;
+		bulk_string_builder.cpp;
+		bulk_string_builder.hpp;
+		error_builder.cpp;
+		error_builder.hpp;
+		integer_builder.cpp;
+		integer_builder.hpp;
+		reply_builder.cpp;
+		reply_builder.hpp;
+		simple_string_builder.cpp;
+		simple_string_builder.hpp;
+)
+
+target_include_directories(cpp_redis
+	PUBLIC
+		${CMAKE_CURRENT_SOURCE_DIR};
+)
