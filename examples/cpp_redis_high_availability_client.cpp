@@ -22,8 +22,8 @@
 
 #include <cpp_redis/cpp_redis>
 
-#include <iostream>
 #include "winsock_initializer.h"
+#include <iostream>
 
 int
 main(void) {
@@ -41,11 +41,12 @@ main(void) {
 
   //! Call connect with optional timeout
   //! Can put a loop around this until is_connected() returns true.
-  client.connect("mymaster", [](const std::string& host, std::size_t port, cpp_redis::connect_state status) {
-    if (status == cpp_redis::connect_state::dropped) {
-      std::cout << "client disconnected from " << host << ":" << port << std::endl;
-    }
-  },
+  client.connect(
+    "mymaster", [](const std::string& host, std::size_t port, cpp_redis::connect_state status) {
+      if (status == cpp_redis::connect_state::dropped) {
+        std::cout << "client disconnected from " << host << ":" << port << std::endl;
+      }
+    },
     0, -1, 5000);
 
   // same as client.send({ "SET", "hello", "42" }, ...)

@@ -24,19 +24,19 @@
 #define __CPP_REDIS_
 
 #ifdef _WIN32
-#pragma comment( lib, "ws2_32.lib")
+#pragma comment(lib, "ws2_32.lib")
 #endif /* _WIN32 */
 
-#include <cpp_redis/core/client.hpp>
-#include <cpp_redis/core/consumer.hpp>
-#include <cpp_redis/core/subscriber.hpp>
-#include <cpp_redis/core/reply.hpp>
-#include <cpp_redis/misc/error.hpp>
-#include <cpp_redis/misc/logger.hpp>
-#include <cpp_redis/core/types.hpp>
+#include "client.hpp"
+#include "consumer.hpp"
+#include "reply.hpp"
+#include "subscriber.hpp"
+#include "types.hpp"
+#include "error.hpp"
+#include "logger.hpp"
 
 #endif
 
 #ifndef __CPP_REDIS_USE_CUSTOM_TCP_CLIENT
-#include <cpp_redis/network/tcp_client.hpp>
+#include "tcp_client.hpp"
 #endif /* __CPP_REDIS_USE_CUSTOM_TCP_CLIENT */

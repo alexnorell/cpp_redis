@@ -22,7 +22,7 @@
 
 #include <iostream>
 
-#include <cpp_redis/misc/logger.hpp>
+#include "logger.hpp"
 
 namespace cpp_redis {
 

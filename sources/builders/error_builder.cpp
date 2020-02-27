@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#include <cpp_redis/builders/error_builder.hpp>
+#include "error_builder.hpp"
 
 namespace cpp_redis {
 

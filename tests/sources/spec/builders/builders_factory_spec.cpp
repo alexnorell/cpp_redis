@@ -20,13 +20,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#include <cpp_redis/builders/array_builder.hpp>
-#include <cpp_redis/builders/builders_factory.hpp>
-#include <cpp_redis/builders/bulk_string_builder.hpp>
-#include <cpp_redis/builders/error_builder.hpp>
-#include <cpp_redis/builders/integer_builder.hpp>
-#include <cpp_redis/builders/simple_string_builder.hpp>
-#include <cpp_redis/misc/error.hpp>
+#include "array_builder.hpp"
+#include "builders_factory.hpp"
+#include "bulk_string_builder.hpp"
+#include "error_builder.hpp"
+#include "integer_builder.hpp"
+#include "simple_string_builder.hpp"
+#include "error.hpp"
 #include <gtest/gtest.h>
 
 TEST(BuildersFactory, Array) {

@@ -24,10 +24,10 @@
 #ifndef CPP_REDIS_IMPL_TYPES_HPP
 #define CPP_REDIS_IMPL_TYPES_HPP
 
-#include <cpp_redis/core/reply.hpp>
-#include <cpp_redis/misc/convert.hpp>
-#include <cpp_redis/misc/logger.hpp>
-#include <cpp_redis/misc/optional.hpp>
+#include "reply.hpp"
+#include "convert.hpp"
+#include "logger.hpp"
+#include "optional.hpp"
 #include <sstream>
 #include <string>
 #include <vector>
@@ -40,7 +40,7 @@ namespace cpp_redis {
 class serializer_type {
 public:
   inline serializer_type() {}
-  
+
   virtual ~serializer_type() {}
 
   /**

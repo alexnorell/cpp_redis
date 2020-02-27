@@ -20,8 +20,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#include <cpp_redis/misc/macro.hpp>
-#include <cpp_redis/network/tcp_client.hpp>
+#include "macro.hpp"
+#include "tcp_client.hpp"
 
 namespace cpp_redis {
 

@@ -20,9 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#include <cpp_redis/builders/bulk_string_builder.hpp>
-#include <cpp_redis/misc/error.hpp>
-#include <cpp_redis/misc/logger.hpp>
+#include "bulk_string_builder.hpp"
+#include "error.hpp"
+#include "logger.hpp"
 
 namespace cpp_redis {
 

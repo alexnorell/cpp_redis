@@ -22,9 +22,9 @@
 
 #include <cctype>
 
-#include <cpp_redis/builders/integer_builder.hpp>
-#include <cpp_redis/misc/error.hpp>
-#include <cpp_redis/misc/logger.hpp>
+#include "integer_builder.hpp"
+#include "error.hpp"
+#include "logger.hpp"
 
 namespace cpp_redis {
 

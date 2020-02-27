@@ -36,7 +36,7 @@ template <int I, class T>
 using enableIf = typename std::enable_if<I, T>::type;
 #else
 
-#include <cpp_redis/misc/logger.hpp>
+#include "logger.hpp"
 
 namespace cpp_redis {
 template <int I, class T>
@@ -44,12 +44,13 @@ using enableIf = typename std::enable_if<I, T>::type;
 
 template <class T>
 struct optional {
-  optional(T value) : m_value(value) {}
-//  optional<T>&
-//  operator()(T value) {
-//    m_value = value;
-//    return *this;
-//  }
+  optional(T value)
+  : m_value(value) {}
+  //  optional<T>&
+  //  operator()(T value) {
+  //    m_value = value;
+  //    return *this;
+  //  }
 
   T m_value;
 

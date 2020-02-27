@@ -21,13 +21,13 @@
 // SOFTWARE.
 
 #include <cpp_redis/cpp_redis>
-#include <tacopie/tacopie>
+#include "tacopie.hpp"
 
+#include "winsock_initializer.h"
 #include <condition_variable>
 #include <iostream>
 #include <mutex>
 #include <signal.h>
-#include "winsock_initializer.h"
 
 std::condition_variable should_exit;
 

@@ -22,8 +22,8 @@
 
 #include <thread>
 
-#include <cpp_redis/core/client.hpp>
-#include <cpp_redis/misc/error.hpp>
+#include "client.hpp"
+#include "error.hpp"
 
 #include <gtest/gtest.h>
 

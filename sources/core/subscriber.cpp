@@ -20,9 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#include <cpp_redis/core/subscriber.hpp>
-#include <cpp_redis/misc/error.hpp>
-#include <cpp_redis/misc/logger.hpp>
+#include "subscriber.hpp"
+#include "error.hpp"
+#include "logger.hpp"
 
 #include <thread>
 
@@ -97,10 +97,10 @@ subscriber::connect(
   __CPP_REDIS_LOG(debug, "cpp_redis::subscriber attempts to connect");
 
   //! Save for auto reconnects
-  m_redis_server             = host;
-  m_redis_port               = port;
-  m_connect_callback         = connect_callback;
-  m_max_reconnects           = max_reconnects;
+  m_redis_server          = host;
+  m_redis_port            = port;
+  m_connect_callback      = connect_callback;
+  m_max_reconnects        = max_reconnects;
   m_reconnect_interval_ms = reconnect_interval_ms;
 
   //! notify start
@@ -167,7 +167,7 @@ subscriber::client_setname(const std::string& name, const reply_callback_t& repl
   // commands on reconnecting.  This makes it impossible to do reliably in the application
   // layer as opposed to in the subscriber itself for reconnects.  re_client_setname will
   // send the command at reconnect time.
-  m_client_name = name;
+  m_client_name                   = name;
   m_client_setname_reply_callback = reply_callback;
 
   m_client.send({"CLIENT", "SETNAME", name});

@@ -1,0 +1,20 @@
+target_sources(cpp_redis
+	PUBLIC
+		client.cpp;
+		client.hpp;
+		consumer.cpp;
+		consumer.hpp;
+		reply.cpp;
+		reply.hpp;
+		sentinel.cpp;
+		sentinel.hpp;
+		subscriber.cpp;
+		subscriber.hpp;
+		types.cpp;
+		types.hpp;
+)
+
+target_include_directories(cpp_redis
+	PUBLIC
+		${CMAKE_CURRENT_SOURCE_DIR}
+)

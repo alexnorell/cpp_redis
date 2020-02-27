@@ -29,7 +29,7 @@
 //! For debugging purpose, uncomment
 // #include <cpp_redis/cpp_redis>
 // #include <memory>
-// #include <tacopie/tacopie>
+// #include "tacopie.hpp"
 
 int
 main(int argc, char** argv) {
