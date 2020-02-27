@@ -1,7 +1,7 @@
 add_library(cpp_redis STATIC)
 target_sources(cpp_redis
 	PUBLIC
-		cpp_redis.h;
+		cpp_redis.hpp;
 )
 
 target_link_libraries(cpp_redis
